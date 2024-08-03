@@ -17,15 +17,34 @@ slopes and endpoints. <br>
 </div>
 
 <div style="text-align: center;">
-  <img src="images/pointcloud_singlescan.jpg" alt="single_scan">
+  <img src="images/pointcloud_singlescan.jpg" alt="single_scan" width='500' length='500'>
   <p>Figure 2. Single scan point cloud before/after processing</p>
 </div>
 
-
+## Multi scan feature merge
 In the last stage, density-based clustering was performed to fuse the features in 
 multi-scan data. Specifically, I combined DBSCAN and Mean Shift clustering to 
 process the data (the slope and two endpoints), enabling the potentially coincident lines to be 
-labeled the same and merged. <be>
+labeled the same and merged. <br>
 
+
+<div style="display: flex; justify-content: space-around;">
+  <div style="text-align: center;">
+    <img src="images/pointcloud_multiscan_origin.jpg" alt="mult_orig">
+    <p>Figure 3. Origin data after line fitting</p>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="images/pointcloud_multiscan_dbscan.jpg alt="mult_db" style="width: 200px;">
+    <p>Figure 4. Data after DBSCAN</p>
+  </div>
+  
+  <div style="text-align: center;">
+    <img src="images/pointcloud_multiscan_meanshift.jpg" alt="mult_ms">
+    <p>Figure 5. Data after Meanshift</p>
+  </div>   
+</div>
+
+## Result
 The result showed that a 5522 by 1052 dataset could be 
 reduced to 700 line segments, while the processing time was within 5 minutes.
