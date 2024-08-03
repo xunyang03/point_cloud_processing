@@ -1,9 +1,10 @@
 # point_cloud_processing
-Lidar slam w/ open source MATLAB frame. Research on line features recognition and extraction
-
+Lidar slam w/ open source MATLAB framework. Research on line features recognition and extraction.
+[Source](https://github.com/meyiao/LaserSLAM/tree/master)<br>
 In the beginning, I noted that the line features of the 
 indoor environment are apparent, e.g.: the outlines of walls or tables. Therefore, I decided to 
 utilize clustering and linear fitting to extract features in a single-scan point cloud. <br>
+
 ## Single scan feature extraction
 The clusters were initially determined by the distance between points. This led to the incorrect 
 classification of points around corners due to the narrow spacing. After I developed and 
@@ -13,7 +14,7 @@ slopes and endpoints. <br>
 
 <table>
   <tr>
-    <td><img src="images/pointcloud_pca.gif" alt="PCA_principle" width='300'></td>
+    <td><img src="images/PCA_Principle.gif" alt="PCA_principle"></td>
     <td><img src="images/pointcloud_singlescan.jpg" alt="single_scan" width='500' length='500'></td>
   </tr>
   <tr>
@@ -47,5 +48,6 @@ reduced to 700 line segments, while the processing time was within 5 minutes.
 
 <table>
   <tr>
+    <td><img src="images/pointcloud_multiscan_origin2.jpg" alt="result" width='300'></td>
   <td><img src="images/pointcloud_multiscan_merged.jpg" alt="result" width='300'></td>
   </tr>
