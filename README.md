@@ -1,6 +1,15 @@
 # point_cloud_processing
 Lidar slam w/ open source MATLAB framework. Research on line features recognition and extraction.
 [Source](https://github.com/meyiao/LaserSLAM/tree/master)<br>
+<table>
+  <tr>
+<td><img src="images/pointcloud_1.jpg" alt="matlabframe" width='500' length='500'></td>
+  </tr>
+  <tr>
+<td>Figure 1. MATLAB open source framework</td>
+  </tr>
+</table>
+
 In the beginning, I noted that the line features of the 
 indoor environment are apparent, e.g.: the outlines of walls or tables. Therefore, I decided to 
 utilize clustering and linear fitting to extract features in a single-scan point cloud. <br>
