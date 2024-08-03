@@ -11,14 +11,11 @@ classification of points around corners due to the narrow spacing. After I devel
 applied a Corner Detection algorithm, an explicit linear characteristic was demonstrated for 
 each cluster. Next, I implemented **Principal Component Analysis** to obtain the line segments’ 
 slopes and endpoints. <br>
-
 <table>
-  <tr>
-    <td><img src="images/PCA_Principle.gif" alt="PCA_principle"></td>
+  <tr>    
     <td><img src="images/pointcloud_singlescan.jpg" alt="single_scan" width='500' length='500'></td>
   </tr>
   <tr>
-    <td><p>Figure 1. Illustration of how PCA works</p></td>
     <td><p>Figure 2. Single scan point cloud before/after processing</p></td>
   </tr>
 </table>
@@ -48,6 +45,11 @@ reduced to 700 line segments, while the processing time was within 5 minutes.
 
 <table>
   <tr>
-    <td><img src="images/pointcloud_multiscan_origin2.jpg" alt="result" width='300'></td>
+  <td><img src="images/pointcloud_multiscan_origin2.jpg" alt="result" width='300'></td>
   <td><img src="images/pointcloud_multiscan_merged.jpg" alt="result" width='300'></td>
   </tr>
+  <tr>
+  <td><p>Figure 6. Original data w/ number of lines</p></td>
+    <td><p>Figure 7. Data after feature merging w/ num of lines</p></td>   
+  </tr>
+</table>
